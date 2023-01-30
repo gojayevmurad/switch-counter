@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f2709c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff9472,
+    #f2709c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff9472,
+    #f2709c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+span {
+  font-size: 8rem;
+}
+
+div button {
+  height: 50px;
+  width: 160px;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+  background-color: #191919;
+  color: #fff;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+button[value="+"]{
+    color: green;
+}
+
+button[value="-"]{
+    color: red;
+}
+
+button[value="reset"]{
+    color: blue;
+}
